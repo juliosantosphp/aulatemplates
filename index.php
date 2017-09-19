@@ -1,21 +1,15 @@
 
+<?php
+require 'template.php';
 
-<html>
-  <?php
+$array = array(
+    "titulo" => "Titulo da página",
+    "nome" => "Fulano"
+);
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+$tpl = new Template('template.html');
+$tpl->render($array);
+
 ?>
-    <head>
-        <meta charset="UTF-8">
-        <title>aula template</title>
-    </head>
-    <body>
-        
-        <h1>Aulas de php super avançado - template</h1>
-    </body>
-</html>
+
 
